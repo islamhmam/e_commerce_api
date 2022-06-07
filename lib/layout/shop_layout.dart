@@ -20,7 +20,7 @@ class ShopLayout extends StatelessWidget {
         return Scaffold(
           appBar: AppBar(
             title: Text(
-              'Salla',
+              'E Commerce',
             ),
             actions: [
               IconButton(
