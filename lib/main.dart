@@ -1,15 +1,9 @@
-import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:hexcolor/hexcolor.dart';
-// import 'package:e_commerce_api/layout/news_app/cubit/cubit.dart';
-// import 'package:e_commerce_api/layout/news_app/news_layout.dart';
 import 'package:e_commerce_api/layout/cubit/cubit.dart';
 import 'package:e_commerce_api/layout/shop_layout.dart';
 import 'package:e_commerce_api/modules/login/shop_login_screen.dart';
 import 'package:e_commerce_api/modules/on_boarding/on_boarding_screen.dart';
-import 'package:e_commerce_api/shared/bloc_observer.dart';
 import 'package:e_commerce_api/shared/components/constants.dart';
 import 'package:e_commerce_api/shared/cubit/cubit.dart';
 import 'package:e_commerce_api/shared/cubit/states.dart';
