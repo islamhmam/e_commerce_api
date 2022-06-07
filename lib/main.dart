@@ -18,10 +18,8 @@ import 'package:e_commerce_api/shared/network/remote/dio_helper.dart';
 import 'package:e_commerce_api/shared/styles/themes.dart';
 
 void main() async {
-  // بيتأكد ان كل حاجه هنا في الميثود خلصت و بعدين يتفح الابلكيشن
   WidgetsFlutterBinding.ensureInitialized();
 
-  // Bloc.observer = MyBlocObserver();
   DioHelper.init();
   await CacheHelper.init();
 
@@ -69,12 +67,7 @@ class MyApp extends StatelessWidget
   Widget build(BuildContext context) {
     return MultiBlocProvider(
       providers: [
-        // BlocProvider(
-        //   create: (context) => NewsCubit()
-        //     ..getBusiness()
-        //     ..getSports()
-        //     ..getScience(),
-        // ),
+
         BlocProvider(
           create: (BuildContext context) => AppCubit()
             ..changeAppMode(
@@ -93,7 +86,6 @@ class MyApp extends StatelessWidget
             theme: lightTheme,
             darkTheme: darkTheme,
             themeMode:ThemeMode.light,
-            // AppCubit.get(context).isDark ? ThemeMode.dark : ThemeMode.light,
             home: startWidget,
           );
         },
